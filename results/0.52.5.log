@@ -1,0 +1,13 @@
+☰eve  v0.52.5
+[eve:dev.boot] compiling agent
+[eve:dev.boot] compiling agent finished { ms: 130 }
+[eve:dev.boot] creating dev server
+[eve:dev.boot] creating dev server finished { ms: 296 }
+[eve:dev.boot] binding port
+[eve:dev.boot] binding port finished { ms: 3 }
+[eve:dev.boot] building dev bundle
+[eve:dev.boot] building dev bundle finished { ms: 2182 }
+[eve:dev.boot] starting file watcher
+[eve:dev.boot] starting file watcher finished { ms: 5 }
+[DEV] server listening at http://127.0.0.1:21872/
+REPRO_RECALL_CALLED
