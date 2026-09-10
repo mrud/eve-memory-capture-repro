@@ -11,12 +11,6 @@ npm ci
 npm run repro
 ```
 
-On machines that hit the OS file-watcher limit:
-
-```sh
-CHOKIDAR_USEPOLLING=true npm run repro
-```
-
 The runner starts `eve dev` on localhost:21871, sends one message through the HTTP session API, reads the event stream through `session.waiting`, and checks the provider's log markers. It stops its server afterward. Set `REPRO_PORT` to use another port.
 
 Expected: the turn completes, recall runs, and capture runs.
@@ -48,4 +42,4 @@ The same app and HTTP runner were executed against clean npm installs:
 
 The 0.52.5 result and complete server log are included in `results/`. The runner saves logs and events for subsequent runs. These are full local `eve dev` runs, not extracted-function tests. Tested on macOS arm64 with Node 24.19.0. The checkout is pinned back to 0.52.5.
 
-The Codex filesystem sandbox prevented the Nitro worker from starting (watcher errors or a build timeout). The successful runs used the same fixture outside that sandbox. No provider or Eve code was patched.
+No provider or Eve code was patched.
